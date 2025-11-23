@@ -34,7 +34,7 @@ const GptSearchBar = () => {
 
     const gptResults = await openai.chat.completions.create({
       messages: [{ role: "user", content: gptQuery }],
-      model: "gpt-3.5-turbo",
+      model: "deepseek/deepseek-chat-v3-0324",
     });
 
     if (!gptResults.choices) {
